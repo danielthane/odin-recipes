@@ -3,11 +3,17 @@
 /* 
 font-family: 'Montserrat', sans-serif; */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #fefae0;
     color: #283618;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;    
+    text-align: center;
 }
 
 h1{
@@ -16,22 +22,38 @@ h1{
     
 }
 
+.container{
+    margin-top: 40px;
+}
+
+.card a, 
+.card a:visited{
+    color: #283618;
+    display: block;
+    font-weight: 700;
+}
+
+.card img{
+    margin-top: 24px;
+}
+
 .left-mar{
     margin-left: 40px;
 }
 
-.title-img{
-    
-}
-
-
-
-.title-page-list li{
-    list-style-type: none;
+.title-page-list{
+    display: flex;
     font-size: 24px;
-    
+    justify-content: center;
+    gap: 12px;
+    list-style-type: none;
+    margin-top: 24px;
 }
 
-li{
-    margin-bottom: 2rem;
+.card{
+    background-color: #dda15e;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 16px;
+    width: 300px;
 }
